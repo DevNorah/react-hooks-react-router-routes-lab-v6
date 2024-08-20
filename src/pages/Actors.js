@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 function Actors() {
   const [actors, setActors] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:4000/actors')
+    fetch('http://localhost:3000/actors')
       .then((response) => response.json())
       .then((actorsData) => setActors(actorsData));
   }, []);

@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 function Directors() {
   const [directors, setDirectors] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:4000/directors')
+    fetch('http://localhost:3000/directors')
       .then((response) => response.json())
       .then((directorsData) => setDirectors(directorsData));
   }, []);
